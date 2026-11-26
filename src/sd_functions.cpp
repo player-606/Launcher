@@ -11,7 +11,7 @@
 #include "partition_table_model.h"
 #include "ram_profile.h"
 #include "settings.h"
-#include "utils.h"
+#include "utils.h" 
 #include <algorithm>
 #include <esp_app_format.h>
 #include <esp_image_format.h>
