@@ -66,7 +66,7 @@ bool setupSdCard() {
         sdcardSPI.begin(_sck, _miso, _mosi, _cs);
         vTaskDelay(pdTICKS_TO_MS(10));
     }
-    if (sdOnTftBus ? !SDM.begin(_cs) : !SDM.begin(_cs, sdcardSPI))
+    if (sdOnTftBus ? !SDM.begin(_cs) : !SDM.begin(_cs, sdcardSPI, 20000000))
 #endif
     {
         // sdcardSPI.end(); // Closes SPI connections and release pin header.
